@@ -24,7 +24,7 @@ $ npm start
  **_Note:_**  Run the command ```rs``` to restart the app after saving changes to the code as hot reload is currently not supported.
  
 
-#### Building
+### Building
 
 Generating portable version and setup for distribution:
 
