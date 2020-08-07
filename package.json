@@ -1,8 +1,8 @@
 {
   "name": "screen-recorder",
-  "productName": "screen-recorder",
+  "productName": "Facile Screen Recorder",
   "version": "1.0.0",
-  "description": "Basic Screen Recorder",
+  "description": "Electron powered, lightweight, basic screen recorder",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -14,7 +14,7 @@
   "keywords": [],
   "author": {
     "name": "Aman Thakur",
-    "email": "45814337+aman56thakur@users.noreply.github.com"
+    "email": "aman56thakur@gmail.com"
   },
   "license": "MIT",
   "config": {
