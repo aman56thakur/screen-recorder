@@ -1,6 +1,6 @@
 # Facile Screen Recorder
 
-Electron powered, lightweight, basic screen recorder for Windows and macOS.
+Electron powered, lightweight, basic screen recorder for Windows, macOS and Linux.
 
 ### Tech
 
