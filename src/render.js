@@ -15,12 +15,14 @@ startBtn.onclick = (e) => {
   mediaRecorder.start()
   startBtn.classList.add('is-danger')
   startBtn.innerText = 'Recording'
+  videoSelectBtn.disabled = true
 }
 
 stopBtn.onclick = (e) => {
   mediaRecorder.stop()
   startBtn.classList.remove('is-danger')
   startBtn.innerText = 'Start'
+  videoSelectBtn.disabled = false
 }
 
 videoSelectBtn.onclick = getVideoSources
@@ -83,5 +85,6 @@ async function handleStop(e) {
     buttonLabel: 'Save Video',
     defaultPath: `Recording-${Date.now()}.webm`,
   })
-  if (filePath) writeFile(filePath, buffer)
+  if (filePath)
+    writeFile(filePath, buffer, () => console.log('Video saved successfully!'))
 }
