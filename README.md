@@ -34,7 +34,7 @@ $ npm run make
 
  **_Note:_**  The Operating System will be auto-detected and files will be generated accordingly.
 
-### Todos
+### Todo
 
  - Add login & cloud storage feature
  - Write tests
