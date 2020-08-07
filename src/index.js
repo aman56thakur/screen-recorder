@@ -12,6 +12,7 @@ const createWindow = () => {
       nodeIntegration: true,
     },
     icon: __dirname + './assets/app-icon.jpg',
+    resizable: false,
   })
   mainWindow.removeMenu()
   mainWindow.loadFile(path.join(__dirname, 'index.html'))

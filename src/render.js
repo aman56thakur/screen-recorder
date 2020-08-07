@@ -40,7 +40,11 @@ async function getVideoSources() {
       }
     })
   )
-  videoOptionsMenu.popup()
+  videoOptionsMenu.popup({
+    window: remote.getCurrentWindow(),
+    x: 250,
+    y: 190,
+  })
 }
 
 async function selectSource(source) {
