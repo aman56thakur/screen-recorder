@@ -10,8 +10,13 @@
     />
     <link rel="stylesheet" href="css/index.css" />
     <script defer src="render.js"></script>
+    <style>
+      .no-scroll::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
   </head>
-  <body>
+  <body class="no-scroll">
     <h1 class="title">⏺️ Facile Screen Recorder</h1>
     <button id="startBtn" class="button is-primary">Start</button>
     <button id="stopBtn" class="button is-warning">Stop</button>
