@@ -1,5 +1,5 @@
 const { writeFile } = require('fs')
-const { desktopCapturer, remote } = require('electron')
+const { desktopCapturer, remote, shell } = require('electron')
 
 const { dialog, Menu } = remote
 let mediaRecorder
@@ -91,4 +91,9 @@ async function handleStop(e) {
   })
   if (filePath)
     writeFile(filePath, buffer, () => console.log('Video saved successfully!'))
+  const savedNotification = new Notification('Recording Saved!', {
+    body: 'Click on this notification to view the recording.',
+    icon: './assets/app-icon.jpg',
+  })
+  savedNotification.onclick = () => shell.openExternal(filePath)
 }
