@@ -13,13 +13,12 @@ And of course, it is open source with a [public repository](https://github.com/a
 
 ### Installation
 
-Facile Screen Recorder requires [Node.js](https://nodejs.org/) v10+ & [git](https://git-scm.com/) v2.22+ to run.
+Facile Screen Recorder requires [Node.js](https://nodejs.org/) v10+, [git](https://git-scm.com/) v2.22+ & [yarn](https://www.npmjs.com/package/yarn) to run.
 
 Install the dependencies and start the application.
 
 ```sh
 $ npm install -d
-$ npm i yarn
 $ npm start
 ```
  **_Note:_**  Run the command ```rs``` to restart the app after saving changes to the code as hot reload is currently not supported.
