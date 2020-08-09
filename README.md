@@ -13,7 +13,7 @@ And of course, it is open source with a [public repository](https://github.com/a
 
 ### Installation
 
-Facile Screen Recorder requires [Node.js](https://nodejs.org/) v10+, [git](https://git-scm.com/) v2.22+ & [yarn](https://www.npmjs.com/package/yarn) to run.
+Facile Screen Recorder requires [Node.js](https://nodejs.org/) v10+, [git](https://git-scm.com/) v2.22+ & [yarn](https://www.npmjs.com/package/yarn) v1.22+ to run.
 
 Install the dependencies and start the application.
 
