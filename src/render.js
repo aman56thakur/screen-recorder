@@ -90,10 +90,11 @@ async function handleStop(e) {
     defaultPath: `Recording-${Date.now()}.webm`,
   })
   if (filePath)
-    writeFile(filePath, buffer, () => console.log('Video saved successfully!'))
-  const savedNotification = new Notification('Recording Saved!', {
-    body: 'Click on this notification to view the recording.',
-    icon: './assets/app-icon.jpg',
-  })
-  savedNotification.onclick = () => shell.openExternal(filePath)
+    writeFile(filePath, buffer, () => {
+      const savedNotification = new Notification('Recording Saved!', {
+        body: 'Click on this notification to view the recording.',
+        icon: './assets/app-icon.jpg',
+      })
+      savedNotification.onclick = () => shell.openExternal(filePath)
+    })
 }
